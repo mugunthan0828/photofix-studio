@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+ 
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border-radius:30%;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: black;
+}
+
+/* Style the container/contact section */
+.container-con {
+  
+  background-color: white;
+  padding: 10px;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 10px;
+ 
+}
+
+
+ footer {
+  /* place on the bottom */
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  
+
+  background: Black;
+  display: grid;
+  color:white;
+  padding:10px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+    
+  }
+}
